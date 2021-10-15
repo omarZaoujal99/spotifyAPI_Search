@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Search API</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./results.css">
+</head>
+<body>
+    <main>
+        <div class="div_1">
+            <h1 class="h1_1">The results of your search:</h1>
+            <hr class="hr_1">
+            <!-- artist -->
+            <div class="artistd1" id="artistdiv">
+                <h2 class="h2_1">Artist:</h2>
+                <img class="artistPic">
+                <table class="tblArtist">
+                    <tr>
+                        <td>Name</td>
+                        <td id="artistName"></td>
+                    </tr>
+                    <tr>
+                        <td>Genres</td>
+                        <td id="artistGenre"></td>
+                    </tr>
+                    <tr>
+                        <td>Spotify link</td>
+                        <td id="artistUrl"></td>
+                    </tr>
+                </table>
+                <hr class="hr_1">
+            </div>
+            <div class="divArtistsIfNull">
+                <h2 class="h2_1">There's no artist with this name, please try again with the correct value!</h2>
+                <hr class="hr_1">
+            </div>
+            <!-- album -->
+            <div id="albumdiv" class="dTracks">
+                <h2 class="h2_1">Albums:</h2>
+                <table class="tblAlbums">
+                </table>
+            </div>
+            <hr class="hr_1">
+            <!-- tracks -->
+            <div id="tracksdiv" class="dTracks">
+                <h2 class="h2_1">Tracks:</h2>
+                <table class="tblTracks">
+                </table>
+            </div>
+        </div>
+    </main>
+    <!-- axios library cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>
+    <script src="./readData.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Search API</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- TODO: a simple page with input and a some filters to search about song, artist, album... -->
+    <main>
+        <div class="div_1">
+            <h1 class="h1_1">Quick search about your favourite artists, songs, albums</h1>
+            <div class="divForm">
+                <!-- query -->
+                <h3 class="h3_1">*Search for:</h3>
+                <input type="text" id="query" class="inp" placeholder="Tap here...">
+                <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+                <!-- type -->
+                <h3 class="h3_1">*Type:</h3>
+                <div class="divRadios">
+                    <div>
+                        <input type="checkbox" name="type" class="radioType" value="artist" id="artist" checked>
+                        <label for="artist" class="radioLabel">Artist</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="type" class="radioType" value="track" id="track" checked>
+                        <label for="track" class="radioLabel">Track</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="type" class="radioType" value="album" id="album" checked>
+                        <label for="album" class="radioLabel">Album</label><br>
+                    </div>
+                </div>
+                <!-- limit -->
+                <div>
+                    <h3 class="h3_1">Limit:</h3>
+                    <input type="number" name="limit" id="limit" min="1" value="10" class="inpLimit">
+                </div>
+                <!-- submit -->
+            </div>
+            <input type="button" value="SEARCH" id="btnSub" class="submit">
+        </div>
+    </main>
+    <!-- ! axios CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

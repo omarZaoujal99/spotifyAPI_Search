@@ -1,0 +1,82 @@
+.paretnDiv{
+    margin: 100px auto;
+    width: 60%;
+    padding: 50px 40px;
+    background-color: white;
+}
+.artistPic{
+    width: 200px;
+    height: 200px;
+}
+.artistd1{
+    width: 90%;
+    margin: 20px auto;
+}
+.h2_1{
+    margin: 10px;
+}
+.tblArtist,.tblAlbums,.tblTracks{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    table-layout: fixed;
+}
+.dTracks{
+    max-height: 300px;
+    overflow-y: auto;
+}
+.tblTracks{
+    margin-bottom: 30px;
+}
+.tblArtist tr{
+    text-align: left;
+}
+tr,td{
+    word-wrap: break-word;
+}
+.tblArtist tr td{
+    padding: 10px;
+}
+.tblArtist tr td:first-child{
+    width: 30%;
+    font-weight: bold;
+}
+.hr_1{
+    border: 1px solid white;
+    margin: 50px 30px;
+}
+.albumPic{
+    width: 100%;
+    height: 100%;
+}
+.tblAlbums tr td:first-child,.tblTracks tr td:first-child{
+    width: 10%;
+    text-align: left;
+}
+.tblTracks tr td:nth-child(3){
+    text-align: right;
+    width: 20%;
+    padding-right: 5px;
+}
+.tblTracks tr td:nth-child(2){
+    text-align: center;
+}
+.tblAlbums tr,.tblTracks tr{
+    border-bottom: 3px solid rgb(60, 60, 60);
+}
+.tblAlbums tr:nth-child(even),.tblTracks tr:nth-child(even){
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.btnListen{
+    padding: 10px 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all .2s;
+}
+.btnListen:hover{
+    color: white;
+    background-color: black;
+}
+.divArtistsIfNull{
+    display: none;
+}

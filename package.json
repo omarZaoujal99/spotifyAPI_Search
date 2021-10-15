@@ -1,0 +1,28 @@
+{
+  "name": "spotifyapi_search",
+  "version": "1.0.0",
+  "description": "spotify search API",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omarZaoujal99/spotifyAPI_Search.git"
+  },
+  "keywords": [
+    "spotify",
+    "searchAPI",
+    "oz99"
+  ],
+  "author": "oz99",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omarZaoujal99/spotifyAPI_Search/issues"
+  },
+  "homepage": "https://github.com/omarZaoujal99/spotifyAPI_Search#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "spotify-web-api-node": "^5.0.2"
+  }
+}
